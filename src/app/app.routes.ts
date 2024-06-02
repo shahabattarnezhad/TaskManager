@@ -11,4 +11,9 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./about/about.component').then((c) => c.AboutComponent),
   },
+  {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
+  },
 ];
